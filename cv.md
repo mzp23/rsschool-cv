@@ -38,4 +38,12 @@ function isValidIP(str) {
 ```
 ## Experience:
 
-In most cases i'am practise on [codewars](https://www.codewars.com/users/mzp23) 
+In most cases i'am practise on [codewars](https://www.codewars.com/users/mzp23)
+
+## Education:
+
+**2008-2013** Dnipropetrovsk National University of Railway Transport
+  
+## English level:
+
+Pre-Intermediate
