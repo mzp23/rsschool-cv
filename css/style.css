@@ -1,16 +1,60 @@
-body{
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #444444;
-    color: #ffffff;
-
-
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #444444;
+  color: #ffffff;
 }
+
 .width-wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 h1 {
-    margin-top: 50px;   
-    font-weight: 400;
-    font-size: 6rem;
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 6rem;
+}
+main {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "photo-cv summary summary"
+    "box-position-1 box-position-2 box-position-3";
+  grid-auto-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+.photo-cv {
+  grid-area: photo-cv;
+}
+.summary {
+  grid-area: summary;
+}
+.photo-cv img {
+  border-radius: 50%;
+  border: #eece1a 3px solid;
+}
+.box {
+  padding: 20px;
+  background-color: #515151;
+  border-bottom: 2px solid #eece1a;
+
+}
+.box img {
+    transition: all 0.3s ease-in;
+}
+.box img:hover {
+    transform: scale(2.5)
+}
+.box-position-2 li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url("../assests/css.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
