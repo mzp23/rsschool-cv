@@ -15,7 +15,56 @@
         <header>
             <h1>Vitaliy Sliusar</h1>
         </header>
-  </div>
+        <main>
+            <figure class="photo-cv">
+                <img src="./assests/photo_cv.jpg" width="250" height="250" alt="photo-cv">
+            </figure>
+            <section class="box">
+                <h2>Summary</h2>
+                <p>Well motivated to get new knowlegs in CSS HTML JS and improve old. Has experience with common
+                    front-end development tools.</p>
+            </section>
+            <section class="box">
+                <h2>Contact info</h2>
+                <ul>
+                    <li>City: Dnipro</li>
+                    <li>Mobile: +380734155584</li>
+                    <li>Email: mzgme23@gmail.com</li>
+                    <li>Telegram: @amzp23</li>
+                </ul>
+            </section>
+            <section class="box">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                    <li>Javascript</li>
+                    <li>NPM</li>
+                </ul>
+            </section>
+            <section class="box">
+                <h2>Code examples</h2>
+                <code>
+                        function isValidIP(str) { <br>
+                            const regEx = /\n| |e/g; <br>
+                            if (regEx.test(str)) return false; <br>
+                            let ip = str.split("."); <br>
+                            if (ip.length < 4 || ip.length > 4) return false; <br>
+                            let valid = ip.every( <br>
+                              item => item && (item >= 0 && item <= 255) && !item.match(/^0\d{1,2}/) <br>
+                            ); <br>
+                            return valid; <br>
+                          } <br>
+                </code>
+            </section>
+            <section class="box"><h2>Experience</h2>
+            <p>In most cases i’am practise on codewars</p>
+            </section>
+            <section class="box"><h2>Education</h2><p>2008-2013 Dnipropetrovsk National University of Railway Transport</p></section>
+            <section class="box"><h2>English level</h2><p>Pre-Intermediate</p></section>
+        </main>
+    </div>
 </body>
 
 </html>
